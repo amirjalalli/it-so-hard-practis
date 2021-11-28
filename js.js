@@ -1,8 +1,13 @@
-var num1 = Number(prompt("enter Your number: ..."))
-var sum = 0
-for ( i = 0 ; (num1 / 10) != 0; i++){
+var num = prompt("enter your Number: ..")
+var em = 0
 
-    sum = sum + (num1 % 10)
-    num1 = Math.floor(num1 / 10)  
+
+if (num == 0 ){
+    em = 1
+} else {
+for ( var i = 0; num / 10 != 0; i++){
+    em++
+    num = Math.floor(num / 10)
 }
-console.log(sum)
+}
+console.log(em)
