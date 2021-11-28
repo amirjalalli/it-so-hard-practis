@@ -1,6 +1,8 @@
-var allAvg = 0
-for (i = 0 ; i < 5 ; i++){
-    allAvg += Number(prompt("enter your number: "))
+var num1 = Number(prompt("enter Your number: ..."))
+var sum = 0
+for ( i = 0 ; (num1 / 10) != 0; i++){
+
+    sum = sum + (num1 % 10)
+    num1 = Math.floor(num1 / 10)  
 }
-var avg = allAvg / 5;
-alert(avg);
+console.log(sum)
